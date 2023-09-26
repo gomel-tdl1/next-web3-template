@@ -1,6 +1,7 @@
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Providers from "@/pages/Providers";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,7 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="creator" content="Currency X" />
         <meta name="publisher" content="Currency X" />
       </Head>
-      <Component {...pageProps} />
+      <Providers>
+        <Component {...pageProps} />
+      </Providers>
     </>
   );
 }

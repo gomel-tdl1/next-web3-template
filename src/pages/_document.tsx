@@ -1,7 +1,4 @@
 import { Head, Html, Main, NextScript } from 'next/document';
-
-import ResetCSS from '@/styles/ResetCSS';
-
 export default function Document() {
   return (
     <Html lang="en">
@@ -11,7 +8,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <ResetCSS />
       </body>
     </Html>
   );
